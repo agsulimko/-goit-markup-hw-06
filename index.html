@@ -424,17 +424,16 @@
             autocomplete="on"
             novalidate
           >
-            <label   class="label-email">
+            <label class="label-email">
               <input
                 class="subscribe-email"
                 type="email"
                 name="email"
                 id="email"
                 placeholder="E-mail"
-              /> 
+                autofocus
+              />
             </label>
-             
-            
 
             <button class="footer-btn" type="submit">
               Subscribe
@@ -461,25 +460,33 @@
           Leave your contacts and we will call you back
         </h3>
 
-        <form class="form js-speaker-form">
-          <div class="form-contacts"></label>
-            <label for="username" class="form-label">Name
-            <input type="text" name="username" id="username" autofocus />
-            
-            <label for="email" class="form-label">Email</label>
-            <input type="email" name="email" id="email" autofocus/>
-            
-            <label for="phone_number" class="form-label">Phone</label>
-            <input type="tel" name="phone_number" id="phone_number" autofocus/>
-            
+        <form class="form js-speaker-form" autocomplete="off">
+          <div class="form-contacts">
+            <div class="form-field">
+              <label for="username" class="">Name</label>
+              <input type="text" name="username" id="username" autofocus />
+            </div>
 
-            <label for="comment" class="form-label">
-              Comment
-              
-              <textarea class="form-comment" name="comment"
-                id="comment" rows="10" placeholder="Text input"
+            <div class="form-field">
+              <label for="email" class="">Email</label>
+              <input type="email" name="email" id="email" autocomplete="on" />
+            </div>
+
+            <div class="form-field">
+              <label for="phone_number" class="">Phone</label>
+              <input type="tel" name="phone_number" id="phone_number" />
+            </div>
+
+            <div class="form-field">
+              <label for="comment" class="">Comment</label>
+              <textarea
+                class=""
+                name="comment"
+                id="comment"
+                rows="10"
+                placeholder="Text input"
               ></textarea>
-            </label>
+            </div>
           </div>
           <div class="form-license">
             <!-- checkbox -->
@@ -506,6 +513,7 @@
         </form>
       </div>
     </div>
+    <!-- Скрипт на запрет отправки формы -->
     <script>
       (() => {
         document
