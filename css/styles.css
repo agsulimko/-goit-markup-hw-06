@@ -42,7 +42,9 @@ img {
   height: auto;
     }
   
-
+textarea {
+  resize: none;
+}
   
 
 
@@ -388,12 +390,12 @@ input:focus-visible {
   color: #8E8F99;
   align-items: center;
 }
-.form-license-label{
+/* .form-license-label{
   display: flex;
   align-items: center;
-  gap:8px;
+  gap:8px; */
 
-}
+
 .form-btn{
 align-items: center;
 background:var(--color-IRIS);
@@ -407,11 +409,15 @@ width: 169px;
 
 /*  checkbox*/
 .form-icon-checkbox{
+
 border: 1px solid var(--color-NAVYBLU);
 fill: var(--color-Cloud);
 }
 
-.form-icon-checkbo:target{
+.form-icon-checkbox:focus,
+.form-icon-checkbox:active
+{
+ 
   background-color: var(--color-OCEAN);
   border-color: var(--color-OCEAN);
 }

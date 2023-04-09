@@ -419,19 +419,22 @@
           <h2 class="visually-hidden">Subscribe</h2>
           <h3 class="footer-title">Subscribe</h3>
           <form
-            class="div-footer-subscribe"
+            class="div-footer-subscribe js-speaker-form"
             action=""
             autocomplete="on"
             novalidate
           >
-            <label class="label-email">
+            <label   class="label-email">
               <input
                 class="subscribe-email"
                 type="email"
                 name="email"
+                id="email"
                 placeholder="E-mail"
-              />
+              /> 
             </label>
+             
+            
 
             <button class="footer-btn" type="submit">
               Subscribe
@@ -458,29 +461,23 @@
           Leave your contacts and we will call you back
         </h3>
 
-        <form class="form">
-          <div class="form-contacts">
-            <label class="form-label">
-              Name
-              <input type="text" name="username" autofocus />
-            </label>
-            <label class="form-label">
-              Email
-              <input type="email" name="email" />
-            </label>
+        <form class="form js-speaker-form">
+          <div class="form-contacts"></label>
+            <label for="username" class="form-label">Name
+            <input type="text" name="username" id="username" autofocus />
+            
+            <label for="email" class="form-label">Email</label>
+            <input type="email" name="email" id="email" autofocus/>
+            
+            <label for="phone_number" class="form-label">Phone</label>
+            <input type="tel" name="phone_number" id="phone_number" autofocus/>
+            
 
-            <label class="form-label">
-              Phone
-              <input type="tel" name="phone_number" />
-            </label>
-
-            <label class="form-label">
+            <label for="comment" class="form-label">
               Comment
-              <textarea
-                class="form-comment"
-                name="comment"
-                rows="5"
-                placeholder="Text input"
+              
+              <textarea class="form-comment" name="comment"
+                id="comment" rows="10" placeholder="Text input"
               ></textarea>
             </label>
           </div>
@@ -509,6 +506,19 @@
         </form>
       </div>
     </div>
+    <script>
+      (() => {
+        document
+          .querySelector(".js-speaker-form")
+          .addEventListener("submit", (e) => {
+            e.preventDefauit();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log("${name}")
+            );
+          });
+      })();
+    </script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
