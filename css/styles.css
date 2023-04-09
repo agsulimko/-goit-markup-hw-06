@@ -1,10 +1,10 @@
 :root {
   --color-IRIS: #4d5ae5;
+  --color-OCEAN: #404bbf;
   --color-NAVYBLU: #2e2f42;
   --color-SLATE:#434455;
   --color-Cloud: #f4f4fd;
   --color-WHITE: #ffffff;
-  --color-OCEAN: #404bbf;
   --color-background-hero: #2e2f42;
   --color-background-button: #4d5ae5;
   --color-card-team:#ffffff;
@@ -13,30 +13,39 @@
       rgba(46, 47, 66, 0.7));
   --transition-duration:250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 body {
   font-family: "Roboto", sans-serif;
   --color-NAVYBLU: #2e2f42;
   background-color:#ffffff;
-
-  
 }
+
 a {cursor: pointer;}
+
 p {
   font-style: normal;
   font-weight: 400;
 }
+
 p,h1,h2,h3,h4,h5,h6{margin: 0; }
+
 ul{
   margin: 0;
   padding-left: 0;
   }
-  img {
+
+img {
   display: block;
   max-width: 100%;
   height: auto;
     }
+    
+
+  
+
+
 .link {text-decoration: none;}
 .list {
   list-style: none;
@@ -300,6 +309,97 @@ transition-timing-function:cubic-bezier(0.23, 1, 0.320, 1);
   transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
  }
 
+.modal-title{
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--color-NAVYBLU);
+text-align: center;
+margin-bottom: 16px;
+padding-top : 72px;
+}
+.form {
+  padding-left: 15px;
+  padding-right: 33px;
+  margin: 0 auto;
+
+}
+.form-contacts{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+  height: 336px;
+ 
+}
+.form-label{
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: #8E8F99;
+  line-height: 18px;
+ 
+}
+.form-label input
+{
+  height: 40px;
+  border: 1px solid var(--color-NAVYBLU);
+  border-radius: 4px;
+}
+
+.form-comment{
+height: 120px;
+border: 1px solid var(--color-NAVYBLU);
+border-radius: 4px;
+padding-left: 16px;
+padding-top: 8px;
+}
+
+.form-label input:hover,
+.form-label input:focus{
+border-color: var(--color-IRIS);
+}
+
+.form-comment:hover,
+.form-comment:focus {
+  border-color: var(--color-IRIS);
+}
+
+
+
+
+.form-license{
+  display: flex;
+  flex-direction: column;
+  gap:24px;
+  font-size: 12px;
+  line-height: 1.17px;
+  letter-spacing: 0.04em;
+  color: #8E8F99;
+  align-items: center;
+}
+.form-license-label{
+  display: flex;
+  align-items: center;
+  gap:8px;
+
+}
+.form-btn{
+align-items: center;
+  background:var(--color-IRIS);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--color-WHITE);
+  border: 1px solid var(--color-IRIS);
+  padding: 16px 32px;
+  width: 169px;
+
+}
+
+
 .hero-btn-close{
   display:flex;
   position: absolute;
@@ -539,7 +639,7 @@ padding-bottom: 100px;
   margin-top: 16px;
 }
 
-.title-soc{
+.footer-title{
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -555,6 +655,9 @@ padding-bottom: 100px;
   margin-right: 120px;
 }
 
+.footer-soc {
+  margin-right:80px ;
+}
 .footer-soc-list{
   display: flex;
   justify-content: center;
@@ -586,6 +689,71 @@ transition-timing-function: var(--transition-timing-function);}
 .footer-soc-link:hover,
 .footer-soc-link:focus {
   background-color: #31D0AA;
+}
+
+.div-footer-subscribe{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+  .label-email{
+    margin-right: 24px;
+  }
+  
+
+.footer-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--color-WHITE);
+  background-color: var(--color-background-button);
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+
+.footer-btn-send {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--color-WHITE);
+  background-color: var(--color-background-button);
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  
+}
+.icon-telegram{
+  fill:var(--color-WHITE);
+}
+
+
+.subscribe-email{
+  background-color: inherit;
+  border: 1px solid #FFFFFF;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  width: 264px;
+  height: 40px;
+  padding-left: 16px;
+  color: var(--color-WHITE);
+
 }
 /* ====================Footer=============*/
 /* =======================MAIN PAGE=========*/
