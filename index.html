@@ -415,48 +415,37 @@
           </ul>
         </div>
 
-        <div class="div-footer-subscribe">
-          <form
-            class="footer-subscribe js-speaker-form"
-            autocomplete="on"
-            novalidate
-          >
-            <div class="div-footer-form">
-              <label for="email" class="footer-label">Subscribe </label>
+        <div class="footer-form">
+          <p class="footer-title">Subscribe</p>
+          <form class="js-speaker-form" autocomplete="on" novalidate>
+            <div class="footer-subscribe">
               <input
-                class="subscribe-email"
+                class="footer-email"
                 type="email"
                 name="email"
                 id="email"
                 placeholder="E-mail"
-                autofocus
               />
+              <button class="footer-btn" type="submit">
+                Subscribe
+                <svg class="icon-telegram" width="24" height="20">
+                  <use href="/images/icons.svg#icon-telegram"></use>
+                </svg>
+              </button>
             </div>
-
-            <button class="footer-btn" type="submit">
-              Subscribe
-              <svg class="icon-telegram" width="24" height="20">
-                <use href="/images/icons.svg#icon-telegram"></use>
-              </svg>
-            </button>
           </form>
         </div>
       </div>
     </footer>
 
-    <!----------MODAL----------->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close class="hero-btn-close">
-          <svg class="icon-modal-close" width="18" height="24">
+          <svg class="icon-modal-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <h2 class="visually-hidden">Modal</h2>
-        <h3 class="modal-title">
-          Leave your contacts and we will call you back
-        </h3>
-
+        <p class="modal-title">Leave your contacts and we will call you back</p>
         <form class="form js-speaker-form" autocomplete="off">
           <div class="form-contacts">
             <div class="form-field">
@@ -483,7 +472,7 @@
                   name="e-mail"
                   id="e-mail"
                 />
-                <svg class="icon-form" width="18" height="24">
+                <svg class="icon-form" width="15" height="12">
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg>
               </div>
@@ -498,7 +487,7 @@
                   name="phone_number"
                   id="phone_number"
                 />
-                <svg class="icon-form" width="18" height="24">
+                <svg class="icon-form" width="13" height="13">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
               </div>
@@ -507,15 +496,13 @@
 
           <div class="form-field form-field-textarea">
             <label for="comment" class="form-label">Comment</label>
-            <div class="input-wrap">
-              <textarea
-                class="form-textarea"
-                name="comment"
-                id="comment"
-                rows="10"
-                placeholder="Text input"
-              ></textarea>
-            </div>
+            <textarea
+              class="form-textarea"
+              name="comment"
+              id="comment"
+              rows="10"
+              placeholder="Text input"
+            ></textarea>
           </div>
 
           <div class="form-license">

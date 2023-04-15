@@ -338,31 +338,24 @@
           </ul>
         </div>
 
-        <div class="div-footer-subscribe">
-          <form
-            class="footer-subscribe js-speaker-form"
-            autocomplete="on"
-            novalidate
-          >
-            <div class="div-footer-form">
-              <label for="email" class="footer-label">Subscribe </label>
+        <div class="footer-form">
+          <p class="footer-title">Subscribe</p>
+          <form class="js-speaker-form" autocomplete="on" novalidate>
+            <div class="footer-subscribe">
               <input
-                class="subscribe-email"
+                class="footer-email"
                 type="email"
                 name="email"
                 id="email"
                 placeholder="E-mail"
-                autofocus
               />
+              <button class="footer-btn" type="submit">
+                Subscribe
+                <svg class="icon-telegram" width="24" height="20">
+                  <use href="/images/icons.svg#icon-telegram"></use>
+                </svg>
+              </button>
             </div>
-
-            <button class="footer-btn" type="submit">
-              Subscribe
-              <svg class="icon-telegram" width="24" height="20">
-                <use href="/images/icons.svg#icon-telegram"></use>
-              </svg>
-            </button>
-            <!-- <button class="footer-btn-send" type="button">Subscribe</button> -->
           </form>
         </div>
       </div>
