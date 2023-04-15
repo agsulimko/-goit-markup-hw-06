@@ -492,45 +492,42 @@
                 </svg>
               </div>
             </div>
+            <div class="form-field">
+              <label for="comment" class="form-label">Comment</label>
+              <textarea
+                class="form-textarea"
+                name="comment"
+                id="comment"
+                rows="10"
+                placeholder="Text input"
+              ></textarea>
+            </div>
           </div>
 
-          <div class="form-field form-field-textarea">
-            <label for="comment" class="form-label">Comment</label>
-            <textarea
-              class="form-textarea"
-              name="comment"
-              id="comment"
-              rows="10"
-              placeholder="Text input"
-            ></textarea>
-          </div>
-
-          <div class="form-license">
-            <!-- checkbox -->
-            <input
-              class="input-check visually-hidden"
-              id="privacy"
-              name="privacy"
-              type="checkbox"
-              value="true"
-            />
-            <label for="privacy" class="check-text">
-              <span>
-                <svg class="form-icon-checkbox" width="10" height="8">
-                  <use href="./images/icons.svg#icon-checkbox"></use>
-                </svg>
-              </span>
-              I accept the terms and conditions of the
-              <a
-                class="privacy-policy-link"
-                href="https://policies.google.com/privacy?hl=en"
-                target="_blank"
-                rel="noreferrer noopener"
-                >Privacy Policy
-              </a>
-            </label>
-            <button type="submit" class="form-btn">Send</button>
-          </div>
+          <!-- checkbox -->
+          <input
+            class="input-check visually-hidden"
+            id="privacy"
+            name="privacy"
+            type="checkbox"
+            value="true"
+          />
+          <label for="privacy" class="check-text">
+            <span>
+              <svg class="form-icon-checkbox" width="10" height="8">
+                <use href="./images/icons.svg#icon-checkbox"></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a
+              class="privacy-policy-link"
+              href="https://policies.google.com/privacy?hl=en"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Privacy Policy
+            </a>
+          </label>
+          <button type="submit" class="form-btn">Send</button>
         </form>
       </div>
     </div>

@@ -315,10 +315,6 @@ margin-bottom: 22px;
 
 }
 
-.form {
- 
-}
-
 .form-field{
   display: flex;
   flex-direction: column;
@@ -328,7 +324,6 @@ margin-bottom: 22px;
   color: #8E8F99;
 
 }
-
 
 .form-label{
 color: #8E8F99;
@@ -353,7 +348,6 @@ margin-bottom: 4px;
   transition-timing-function: var(--transition-timing-function);
   }
 
-
 .form-textarea {
   display: block;
   height: 120px;
@@ -370,7 +364,6 @@ margin-bottom: 4px;
   transition-timing-function: var(--transition-timing-function);
   }
 
-
 .icon-form {
   position: absolute;
   top: 50%;
@@ -382,10 +375,6 @@ margin-bottom: 4px;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
   }
-
-.form-field-textarea{
-  margin-bottom: 10px;
-}
 
 .form-textarea::placeholder {
   color: rgba(46, 47, 66, 0.4);
@@ -402,29 +391,22 @@ margin-bottom: 4px;
   fill: var(--color-IRIS); 
 }
 
-.form-field-textarea:focus-within .form-textarea{
+.form-field:focus-within .form-textarea{
   border-color: var(--color-IRIS);
 }
-
 
 .form-contacts{
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-bottom: 8px;
 }
 
-.form-license{
-  display: flex;
-  flex-direction: column;
-  gap:24px;
-  font-size: 12px;
-  letter-spacing: 0.04em;
-  color: #8E8F99;
-  align-items: center;
+.form-field:last-child {
+margin-bottom: 10px;
 }
 
 .form-btn{
+display: block;
 align-items: center;
 background:var(--color-IRIS);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -438,19 +420,20 @@ font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
 cursor: pointer;
+margin: 0 auto;
 }
 
 /*  checkbox*/
-
 .check-text{
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   font-size: 12px;
   letter-spacing: 0.04em;
   color: #8E8F99;
   cursor: pointer;
-
+  margin-bottom: 24px;
 }
 
 .check-text span {
@@ -465,7 +448,6 @@ fill: transparent;
 transition-property: background-color, border-color, fill;
 transition-duration: var(--transition-duration);
 transition-timing-function: var(--transition-timing-function);
-
 }
 
 .input-check:checked + .check-text span{
@@ -480,7 +462,6 @@ transition-timing-function: var(--transition-timing-function);
 .privacy-policy-link {
   color: var(--color-IRIS);
 }
-
 
 .hero-btn-close{
   display:flex;
