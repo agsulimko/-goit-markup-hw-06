@@ -311,7 +311,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 color: var(--color-NAVYBLU);
 text-align: center;
-margin-bottom: 22px;
+margin-bottom: 16px;
 
 }
 
@@ -402,7 +402,7 @@ margin-bottom: 4px;
 }
 
 .form-field:last-child {
-margin-bottom: 10px;
+margin-bottom: 0px;
 }
 
 .form-btn{
@@ -434,6 +434,7 @@ margin: 0 auto;
   color: #8E8F99;
   cursor: pointer;
   margin-bottom: 24px;
+  margin-top: 16PX;
 }
 
 .check-text span {
